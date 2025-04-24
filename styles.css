@@ -1,0 +1,64 @@
+/* styles.css */
+.bl-highlight-want {
+  background-color: rgba(255, 255, 0, 0.3) !important;
+  transition: background-color 0.3s ease;
+}
+
+.bl-highlight-have {
+  background-color: rgba(0, 255, 0, 0.3) !important;
+  transition: background-color 0.3s ease;
+}
+
+.bl-extension-button {
+  padding: 8px 16px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 5px;
+  font-weight: bold;
+}
+
+.bl-extension-button:hover {
+  background-color: #3367d6;
+}
+
+.bl-extension-button-container {
+  margin: 10px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.bl-extension-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.bl-extension-modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.bl-extension-checkbox-container {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bl-extension-checkbox-container input {
+  margin-right: 8px;
+}

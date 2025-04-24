@@ -1,21 +1,22 @@
 {
-    "manifest_version": 3,
-    "name": "Bricklink Want to Have",
-    "version": "1.0",
-    "description": "Automatically copy 'Want' quantity to 'Have' quantity on Bricklink wanted lists",
-    "permissions": ["activeTab", "scripting"],
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": {
-        "16": "images/icon16.png",
-        "48": "images/icon48.png",
-        "128": "images/icon128.png"
-      }
-    },
-    "content_scripts": [
-      {
-        "matches": ["*://*.bricklink.com/*"],
-        "js": ["content.js"]
-      }
-    ]
-  }
+  "manifest_version": 3,
+  "name": "Bricklink Want to Have",
+  "version": "1.0",
+  "description": "Automatically copy 'Want' quantity to 'Have' quantity on Bricklink wanted lists",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.bricklink.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
