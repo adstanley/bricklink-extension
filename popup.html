@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bricklink Want to Have</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+    }
+    button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 10px;
+      background-color: #2a6def;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #1c54c7;
+    }
+    .option-container {
+      margin: 10px 0;
+      background-color: #2d2d2d;
+      border-radius: 6px;
+      padding: 10px;
+    }
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+      margin: 5px 0;
+    }
+    .checkbox-container input {
+      margin-right: 8px;
+      accent-color: #2a6def;
+    }
+    h3 {
+      color: #ffffff;
+      border-bottom: 1px solid #444;
+      padding-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Bricklink Want to Have</h3>
+  <p>Copy "Want" quantities to "Have" quantities on Bricklink.</p>
+  
+  <div class="option-container">
+    <div class="checkbox-container">
+      <input type="checkbox" id="highlightFields" checked>
+      <label for="highlightFields">Highlight fields during copy</label>
+    </div>
+    <div class="checkbox-container">
+      <input type="checkbox" id="confirmEach">
+      <label for="confirmEach">Confirm each value before copying</label>
+    </div>
+    <div class="checkbox-container">
+      <input type="checkbox" id="skipNonZero">
+      <label for="skipNonZero">Skip non-zero Have quantities</label>
+    </div>
+  </div>
+  
+  <button id="copyButton">Copy Want to Have</button>
+  <script src="popup.js"></script>
+</body>
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bricklink Want to Have</title>
+  <style>
+    body {
+      width: 250px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 10px;
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3367d6;
+    }
+  </style>
+</head>
+<body>
+  <h3>Bricklink Want to Have</h3>
+  <p>Copy all "Want" quantities to "Have" quantities on the current page.</p>
+  <button id="copyButton">Copy Want to Have</button>
+  <script src="popup.js"></script>
+</body>
+</html> -->
